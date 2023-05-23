@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Inter:wght@200&family=Lobster&family=Press+Start+2P&display=swap');
+* {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 20px;
+  color: DarkOliveGreen;
+  line-height: 30px;
+}
+
+
+body{ zoom: 80%}
+
+.container{
+    margin-top: 2%;
+    display: flex;
+    width: 100%;
+    height: 97vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+canvas{
+  width: 80%;
+  height: 90%;
+  image-rendering: pixelated;
+}
+.game{
+    border: 3px solid DarkOliveGreen ;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../image/trava.png");
+}
+.game__zone{
+    width: 50%;
+    height: 50%;
+    border: 2px solid saddlebrown;
+    position: relative;
+}
+.block__img{
+  width: 100px;
+  height: 70px;
+}
+.text_img{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.time,.block__text, .textplay1{
+  font-size: 20px;
+  color: DarkOliveGreen;
+}
+
+.panelcontrol{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 30px 0  auto;
+}
+.btn{
+  border: 0px;
+  font-size: 15px;
+  width: 45%;
+  height: 50px;
+  border-radius: 5px;
+  background: DarkOliveGreen;
+  color: white;
+}
+.img{
+  width: 50px;
+  height: 50px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: DarkOliveGreen ;
+  z-index: 1;
+}
+.modal .modalcontent {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: 1px solid #888;
+  width: 30%;
+  z-index: 99999;
+}
+.modal .modalcontent .closemodal {
+  float: right;
+  font-size: 50px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.modalcontent{
+  display:flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  height: 100px;
+  font-size: 50px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.modalcontent2{
+  background-color: #fefefe;
+  margin: 8% auto;
+  padding: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: 1px solid #888;
+  width: 30%;
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+#contenttext{
+  font-size: 35px;
+  color: DarkOliveGreen ;
+}
+
+.closemodal{
+  color: DarkOliveGreen;
+}
+#timer{
+  color: DarkOliveGreen;
+  font-size: 30px;
+  width: 160px;
+  height: 40px;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+}
+.btns{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.volume{
+  width: 55px;
+  height: 50px;
+}
+#volume{
+  border: 0px;
+  background-color: white;
+}
+#volume:active{
+  border: 0px;
+  background-color: white;
+}
