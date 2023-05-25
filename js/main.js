@@ -13,7 +13,7 @@ farmer.src = "./image/farmer/farmer.png";
 
 
 let audio = new Audio("./sound/sound.mp3")
-audio.volume = 0.45;
+audio.volume = 0.50;
 
 
 let openZone = new Image();
